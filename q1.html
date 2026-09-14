@@ -1,0 +1,29 @@
+<html>
+<html>
+<head>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+</style>
+</head>
+<body>
+
+<input type="number" id="num">
+<button onclick="check()">Check</button>
+<p id="result"></p>
+
+<script>
+function check() {
+    let n = document.getElementById("num").value;
+    if (n % 2 == 0)
+        document.getElementById("result").innerHTML = "Even Number";
+    else
+        document.getElementById("result").innerHTML = "Odd Number";
+}
+</script>
+</body>
+</html>
